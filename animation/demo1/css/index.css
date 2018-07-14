@@ -1,0 +1,20 @@
+.main-wrapper{
+	text-align: center;
+}
+h1{
+	width:160px;
+	padding:10px 0;
+	margin:0 auto;
+	transition: all  0.5s linear;
+}
+#line{
+	width:0px;
+	height:5px;
+	margin:0 auto;
+	background-color:blue;
+	transition: width 0.5s ease-in-out;
+}
+.btn{
+	margin-top:80px;
+	font-size:20px;
+}
