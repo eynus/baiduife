@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.smileImg {
+				background: url(img/smile.jpg);
+				background-position: 0 0;
+				width: 480px;
+				height: 480px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="smile" class="smileImg">
+
+		</div>
+	</body>
+	<script type="text/javascript">
+		//如何来回转动？
+		var int = self.setInterval("smile()", 150)
+		var i = 1;
+		var j = 17;
+		var k = 1;
+
+		function smile() {
+			//			debugger;
+			document.getElementById("smile").style.backgroundPositionY = -480 * i + "px";
+			i++;
+		}
+		//		document.getElementById("smile").style.backgroundPositionY = -480 * (j - 1) + "px";
+		//				i--;
+
+		//		smile()
+	</script>
+
+</html>

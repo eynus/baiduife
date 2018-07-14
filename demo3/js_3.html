@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<div>3的小游戏，练习使用循环和条件语句，实现如下需求：
+
+从1到100，以此在console输出各数字，但是，当数字为3的倍数或者含有3的时候，输出“PA”
+比如：1,2,PA,4,5,PA,……,11,PA,PA,14,PA……</div>
+		<p id="content"></p>
+		<button id="send-btn">发送</button>
+	</body>
+	<script type="text/javascript">
+		//		var arr = new Array(100);
+		var arr = [];
+		var j;
+		for(i = 1; i <= 100; i++) {
+			if(i % 3 == 0 | i.toString().match(3)) {
+				j = "PA";
+			} else {
+				j = i;
+			}
+			//						arr[i-1]=i;
+			arr.push(j);
+
+		}
+		console.log(arr);
+		 document.getElementById("send-btn").onclick = function() {
+		 	
+		          document.getElementById("content").innerHTML =  arr;
+		      }
+	</script>
+
+</html>
