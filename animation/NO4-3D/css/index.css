@@ -1,0 +1,46 @@
+.wrapper{
+	position: relative;
+	display: inline-block;
+	margin:60px 60px;
+	perspective: 600px;
+}
+.wrapper:hover .front{
+	/*transform: perspective(600px) rotateY(180deg);*/
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.wrapper:hover .back{
+	/*transform: perspective(600px) rotateY(180deg);*/
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
+	-o-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.front{
+	-webkit-backface-visibility:hidden;
+	-moz-backface-visibility:hidden;
+	-ms-backface-visibility:hidden;
+	-o-backface-visibility:hidden;
+	backface-visibility:hidden;
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	-ms-transition: transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+	}
+.back{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:-1;
+	-webkit-transition: transform 1s;
+	-moz-transition: transform 1s;
+	-ms-transition: transform 1s;
+	-o-transition: transform 1s;
+	transition: transform 1s;
+}
+ 
